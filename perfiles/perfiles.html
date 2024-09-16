@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="perfiles.css"> <!-- Vincula al archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Perfiles</h1>
+
+        <!-- Tarjetas de perfil -->
+        <div class="profile-grid">
+            <div class="profile-card">
+                <h2>Oscar Alegría</h2>
+                <p>Graphic designer</p>
+                <button class="more-info-btn" data-name="Oscar Alegría" data-role="Graphic designer" data-image="https://t3.ftcdn.net/jpg/02/42/00/10/360_F_242001091_hg2Ch1C1tpg3JngWMi2NeY6UKJfBvEZS.jpg" data-description="Soy un diseñador gráfico con 5 años de experiencia.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Sofia Palma</h2>
+                <p>Systems engineer</p>
+                <button class="more-info-btn" data-name="Sofia Palma" data-role="Systems engineer" data-image="https://static.barcelo.com/content/dam/bpt/posts/2023/1/silvia%20moreno%20cenas%20adivina%20pin%20and%20travel.jpg" data-description="Ingeniera de sistemas especializada en soluciones cloud.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Abigail Lue</h2>
+                <p>Web Designer</p>
+                <button class="more-info-btn" data-name="Abigail Lue" data-role="Web Designer" data-image="https://s3-eu-west-1.amazonaws.com/doctoralia.es/doctor/265ca7/265ca77a29fd5b9dbb469da33fb5e994_large.jpg" data-description="Diseñadora web enfocada en experiencias de usuario.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Alisson Acevedo</h2>
+                <p>Management</p>
+                <button class="more-info-btn" data-name="Alisson Acevedo" data-role="Management" data-image="https://photos.psychologytoday.com/daadbf24-16a9-4ec0-b538-f094c0bb8c5b/2/320x400.jpeg" data-description="Especialista en gestión de proyectos con énfasis en liderazgo de equipos.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Fabiola Melgar</h2>
+                <p>Designer</p>
+                <button class="more-info-btn" data-name="Fabiola Melgar" data-role="Designer" data-image="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/44ca51/44ca511bec2a8d0dd1ea3b5de956ed67_large.jpg" data-description="Diseñadora creativa con pasión por las soluciones innovadoras.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Juan Pérez</h2>
+                <p>Software Developer</p>
+                <button class="more-info-btn" data-name="Juan Pérez" data-role="Software Developer" data-image="https://img.freepik.com/foto-gratis/cierre-dientes-hombre-moreno-sonriendo_1187-5800.jpg" data-description="Desarrollador de software con 8 años de experiencia en aplicaciones móviles.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Lucía Ramírez</h2>
+                <p>Project Manager</p>
+                <button class="more-info-btn" data-name="Lucía Ramírez" data-role="Project Manager" data-image="https://photos.psychologytoday.com/7fe08911-56d7-451a-b3a1-e3129335a1bb/2/320x400.jpeg" data-description="Gestora de proyectos con experiencia en metodologías ágiles.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Daniel Gómez</h2>
+                <p>UI/UX Designer</p>
+                <button class="more-info-btn" data-name="Daniel Gómez" data-role="Web Designer" data-image="https://img.freepik.com/foto-gratis/expresivo-hombre-barbudo-camisa_273609-5894.jpg" data-description="Diseñador Web con 2 años de experiencia">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Carmen Ortiz</h2>
+                <p>Marketing Specialist</p>
+                <button class="more-info-btn" data-name="Carmen Ortiz" data-role="Marketing " data-image="https://www.mundopsicologos.com/site/article/60606/50895/las-10-cualidades-de-una-persona-mas-valoradas-0_ai1.jpg" data-description="Especialista en marketing digital con énfasis en estrategias SEO.">More information</button>
+            </div>
+            <div class="profile-card">
+                <h2>Roberto Sánchez</h2>
+                <p>Business Analyst</p>
+                <button class="more-info-btn" data-name="Roberto Sánchez" data-role="Business Analyst" data-image="https://media.licdn.com/dms/image/v2/C4E03AQFAIhlrun6JMQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1650939955041?e=2147483647&v=beta&t=ROqx8mdvEoArLANbbejLwY3NnmvxKERZFG7DRHmYps8" data-description="Analista de negocios con experiencia en inteligencia empresarial.">More information</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Hi there, I'm <strong id="profileName">Luciana Gonzales</strong></p>
+            <img id="profileImage" src="" alt="Profile Picture">
+            <h2 id="profileRole">Role</h2>
+            <p id="profileDescription">Descripción</p>
+
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://e7.pngegg.com/pngimages/16/46/png-clipart-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.freepik.com/vector-gratis/nuevo-diseno-icono-x-logotipo-twitter-2023_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726099200&semt=ais_hybrid" alt="Twitter"></a>
+                <a href="#"><img src="https://e7.pngegg.com/pngimages/523/896/png-clipart-youtube-logo-youtube-red-logo-sunny-leone-angle-rectangle-thumbnail.png" alt="YouTube"></a>
+            </div>
+
+            <div class="buttons">
+                <button>More about me</button>
+                <button>Send me a message</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="perfiles.js"></script> <!-- Vincula al archivo JS -->
+</body>
+</html>
